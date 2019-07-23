@@ -1,11 +1,11 @@
 <?php
 /**
- * Sector Theme Customizer
+ * HiStaff Theme Customizer
  *
- * @package Sector
+ * @package HiStaff
  */
 
-namespace Sector\Customizer;
+namespace HiStaff\Customizer;
 
 /**
  * Add postMessage support for site title and description for the Theme Customizer.

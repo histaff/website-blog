@@ -1,9 +1,6 @@
 <?php
 
-namespace Sector;
-
-/** Set SECTOR_DOMAIN_NAME for language theme name */
-define( 'SECTOR_DOMAIN_NAME', 'sector' );
+namespace HiStaff;
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -17,9 +14,9 @@ function setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on _s, use a find and replace
-	 * to change 'sector' to the name of your theme in all the template files.
+	 * to change 'histaff' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( SECTOR_DOMAIN_NAME, get_template_directory() . '/languages' );
+	load_theme_textdomain( 'histaff', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -41,7 +38,7 @@ function setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Primary', SECTOR_DOMAIN_NAME ),
+		'menu-1' => esc_html__( 'Primary', 'histaff' ),
 	) );
 
 	/*
@@ -103,9 +100,9 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\content_width', 0 );
  */
 function widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', SECTOR_DOMAIN_NAME ),
+		'name'          => esc_html__( 'Sidebar', 'histaff' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', SECTOR_DOMAIN_NAME ),
+		'description'   => esc_html__( 'Add widgets here.', 'histaff' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -119,12 +116,7 @@ add_action( 'widgets_init', __NAMESPACE__ . '\widgets_init' );
  * Enqueue scripts and styles.
  */
 function scripts() {
-	wp_enqueue_style( 'sector-style', get_template_directory_uri() . '/assets/css/style.css' );
-	//wp_enqueue_style( 'sector-woocommerce-style', get_template_directory_uri() . '/assets/css/woocommerce.css' );
-
-	//wp_enqueue_script( 'sector-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
-
-	//wp_enqueue_script( 'sector-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_style( 'histaff-style', get_template_directory_uri() . '/assets/css/style.css' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -1,10 +1,10 @@
 <?php
 /**
  * Clean up functions
- * @package Sector
+ * @package HiStaff
  */
 
-namespace Sector\Header;
+namespace HiStaff\Header;
 
 /**
  * Clean up wp_head()

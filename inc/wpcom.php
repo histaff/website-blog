@@ -4,10 +4,10 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @package Sector
+ * @package HiStaff
  */
 
-namespace Sector\Template;
+namespace HiStaff\Template;
 /**
  * Adds support for wp.com-specific theme functions.
  *

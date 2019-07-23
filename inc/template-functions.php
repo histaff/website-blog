@@ -2,10 +2,10 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package Sector
+ * @package HiStaff
  */
 
-namespace Sector\Template;
+namespace HiStaff\Template;
 
 /**
  * Adds custom classes to the array of body classes.

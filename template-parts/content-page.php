@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Sector
+ * @package HiStaff
  */
 
 ?>
@@ -21,7 +21,7 @@
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', SECTOR_DOMAIN_NAME ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'histaff' ),
 			'after'  => '</div>',
 		) );
 		?>
@@ -34,7 +34,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', SECTOR_DOMAIN_NAME ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'histaff' ),
 						array(
 							'span' => array(
 								'class' => array(),

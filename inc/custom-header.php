@@ -8,10 +8,10 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Sector
+ * @package HiStaff
  */
 
-namespace Sector\Header;
+namespace HiStaff\Header;
 
 /**
  * Set up the WordPress core custom header feature.
