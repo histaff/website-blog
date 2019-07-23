@@ -56,7 +56,7 @@
 			</div>
 		</div>
 
-		<div class="copyright"><p>Copyright 2019, <a href="https://histaff.io" title="HiStaff">HiStaff</a>. All rights reserved.</p></div>
+		<div class="copyright"><p>Copyright <?php echo date('Y'); ?>, <a href="https://histaff.io" title="HiStaff">HiStaff</a>. All rights reserved.</p></div>
 	</div>
 </footer>
 

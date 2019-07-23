@@ -1,22 +1,27 @@
-/* ==========================================================================
-   #PAGE
-   ========================================================================== */
+.entry-meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 15px 0;
+  color: #797283;
+}
 
-/**
- * Simple page-level setup.
- *
- * 1. Set the default `font-size` and `line-height` for the entire project,
- *    sourced from our default variables. The `font-size` is calculated to exist
- *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
- *    navigating between pages that do/do not have enough content to produce
- *    scrollbars naturally.
- * 3. Ensure the page always fills at least the entire height of the viewport.
- */
+.entry-header .entry-title {
+  margin: 0 0 17px 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: Inter;
+}
 
-html {
-  font-size: ($global-font-size / 16px) * 1em; /* [1] */
-  line-height: $global-line-height / $global-font-size; /* [1] */
-  overflow-y: scroll; /* [2] */
-  min-height: 100%; /* [3] */
+.entry-header .entry-title a {
+  color: #1E1C21;
+}
+
+.entry-header {
+  min-height: 56px;
+}
+
+.entry-content {
+  color: #797283;
+  line-height: 24px;
+  font-size: 16px;
 }

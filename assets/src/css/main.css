@@ -472,29 +472,28 @@ fieldset {
 dd, ol, ul {
   margin-left: 24px; }
 
-/* ==========================================================================
-   #PAGE
-   ========================================================================== */
-/**
- * Simple page-level setup.
- *
- * 1. Set the default `font-size` and `line-height` for the entire project,
- *    sourced from our default variables. The `font-size` is calculated to exist
- *    in ems, the `line-height` is calculated to exist unitlessly.
- * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
- *    navigating between pages that do/do not have enough content to produce
- *    scrollbars naturally.
- * 3. Ensure the page always fills at least the entire height of the viewport.
- */
-html {
-  font-size: 1em;
-  /* [1] */
-  line-height: 1.5;
-  /* [1] */
-  overflow-y: scroll;
-  /* [2] */
-  min-height: 100%;
-  /* [3] */ }
+.entry-meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 15px 0;
+  color: #797283; }
+
+.entry-header .entry-title {
+  margin: 0 0 17px 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: Inter; }
+
+.entry-header .entry-title a {
+  color: #1E1C21; }
+
+.entry-header {
+  min-height: 56px; }
+
+.entry-content {
+  color: #797283;
+  line-height: 24px;
+  font-size: 16px; }
 
 /* ==========================================================================
    #HEADINGS
@@ -560,6 +559,11 @@ img {
 img[width],
 img[height] {
   max-width: none; }
+
+.post .wp-post-image {
+  max-width: 100%;
+  border-radius: 6px;
+  max-height: 188px; }
 
 /* ==========================================================================
    #TABLES
@@ -1562,123 +1566,6 @@ body {
       max-width: 100%; }
     body .page-header.home {
       padding-bottom: 30px; }
-  body .features .feature__item {
-    padding: 50px 0; }
-    body .features .feature__item .row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-      body .features .feature__item .row .col-6 {
-        -ms-flex-item-align: center;
-        align-self: center; }
-    body .features .feature__item .feature__content {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      body .features .feature__item .feature__content h2 {
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        color: #1E1C21; }
-      body .features .feature__item .feature__content p {
-        font-size: 18px;
-        line-height: 26px; }
-    body .features .feature__item .thumbnail img {
-      max-width: 100%; }
-  @media screen and (max-width: 719px) {
-    body .features .col-6.first {
-      -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-      order: 1; }
-    body .features .col-6 {
-      -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-      order: 2; }
-    body .features .content {
-      text-align: center;
-      display: block !important;
-      margin: 0; }
-    body .features h2 {
-      margin-top: 10px; } }
-  body .call-to-action {
-    background-color: #8953B7;
-    color: #ffffff;
-    padding: 65px 0;
-    border-radius: 40px 40px 0px 0px; }
-    body .call-to-action .container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      @media screen and (max-width: 719px) {
-        body .call-to-action .container {
-          display: block; }
-          body .call-to-action .container .call-to-action__content {
-            text-align: center; } }
-    body .call-to-action .button {
-      width: 50%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      @media screen and (max-width: 719px) {
-        body .call-to-action .button {
-          display: block;
-          width: 100%;
-          margin-top: 30px; } }
-      body .call-to-action .button a {
-        font-size: 18px;
-        background-color: #ffffff;
-        width: 184px;
-        margin-left: auto;
-        border-radius: 4px;
-        height: 54px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        text-align: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        font-weight: bold;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        color: #8953B7; }
-        @media screen and (max-width: 719px) {
-          body .call-to-action .button a {
-            margin: 0 auto; } }
-    body .call-to-action .call-to-action__content h2 {
-      font-size: 36px;
-      font-family: Inter;
-      font-weight: 600;
-      margin: 0 0 32px;
-      color: #ffffff; }
-    body .call-to-action .call-to-action__content p {
-      font-size: 18px;
-      line-height: 32px; }
-  body .content {
-    line-height: 26px;
-    margin: 47px 0 23px; }
-    body .content p {
-      margin: 0 0 16px; }
-    body .content .title {
-      margin: 0 0 44px; }
   body footer {
     padding: 120px 0 45px; }
     @media screen and (max-width: 719px) {
