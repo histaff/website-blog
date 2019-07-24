@@ -1,27 +1,112 @@
-.entry-meta {
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 15px 0;
-  color: #797283;
+body {
+  strong {
+    font-weight: bold;
+  }
+
+  ul {
+    li {
+      line-height: 24px;
+      list-style: square;
+      color: #1E1C21;
+    }
+  }
 }
 
-.entry-header .entry-title {
-  margin: 0 0 17px 0;
-  font-size: 24px;
-  line-height: 28px;
-  font-family: Inter;
+.site-main {
+  .entry-meta {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    color: #797283;
+  }
+
+  .entry-header {
+    min-height: 56px;
+
+    .entry-title {
+      margin: 0 0 17px 0;
+      font-size: 24px;
+      line-height: 28px;
+      font-family: Inter;
+
+      a {
+        color: #1E1C21;
+      }
+    }
+
+  }
+
+  .entry-content {
+    color: #797283;
+    line-height: 24px;
+    font-size: 16px;
+  }
 }
 
-.entry-header .entry-title a {
-  color: #1E1C21;
+.featured-image {
+  position: relative;
+  margin-bottom: 46px;
+
+  .post-thumbnail {
+    border-radius: 0 0 40px 40px;
+
+    img {
+      max-height: 450px;
+      width: 100%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
+    &:before, &:after {
+      content: "\020";
+      background: #8953b7;
+      display: block;
+      width: 100%;
+      top: 0;
+      height: 100%;
+      left: 0;
+      z-index: 0;
+      position: absolute;
+    }
+
+    &:before {
+      mix-blend-mode: screen;
+      opacity: 0.1;
+    }
+
+    &:after {
+      mix-blend-mode: multiply;
+      opacity: .8;
+    }
+  }
+
+  .entry-header {
+    position: absolute;
+    bottom: 64px;
+
+    .entry-meta {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .entry-title {
+      margin: 15px 0 0 0;
+
+      a {
+        font-size: 40px;
+        color: #ffffff;
+      }
+    }
+  }
 }
 
-.entry-header {
-  min-height: 56px;
-}
-
-.entry-content {
-  color: #797283;
-  line-height: 24px;
-  font-size: 16px;
+.site-single {
+  .entry-content {
+    p {
+      font-size: 16px;
+      color: #1E1C21;
+      line-height: 25px;
+    }
+  }
 }

@@ -472,28 +472,80 @@ fieldset {
 dd, ol, ul {
   margin-left: 24px; }
 
-.entry-meta {
+body strong {
+  font-weight: bold; }
+
+body ul li {
+  line-height: 24px;
+  list-style: square;
+  color: #1E1C21; }
+
+.site-main .entry-meta {
   font-size: 12px;
   text-transform: uppercase;
   padding: 15px 0;
   color: #797283; }
 
-.entry-header .entry-title {
-  margin: 0 0 17px 0;
-  font-size: 24px;
-  line-height: 28px;
-  font-family: Inter; }
-
-.entry-header .entry-title a {
-  color: #1E1C21; }
-
-.entry-header {
+.site-main .entry-header {
   min-height: 56px; }
+  .site-main .entry-header .entry-title {
+    margin: 0 0 17px 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: Inter; }
+    .site-main .entry-header .entry-title a {
+      color: #1E1C21; }
 
-.entry-content {
+.site-main .entry-content {
   color: #797283;
   line-height: 24px;
   font-size: 16px; }
+
+.featured-image {
+  position: relative;
+  margin-bottom: 46px; }
+  .featured-image .post-thumbnail {
+    border-radius: 0 0 40px 40px; }
+    .featured-image .post-thumbnail img {
+      max-height: 450px;
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+    .featured-image .post-thumbnail:before, .featured-image .post-thumbnail:after {
+      content: "\020";
+      background: #8953b7;
+      display: block;
+      width: 100%;
+      top: 0;
+      height: 100%;
+      left: 0;
+      z-index: 0;
+      position: absolute; }
+    .featured-image .post-thumbnail:before {
+      mix-blend-mode: screen;
+      opacity: 0.1; }
+    .featured-image .post-thumbnail:after {
+      mix-blend-mode: multiply;
+      opacity: .8; }
+  .featured-image .entry-header {
+    position: absolute;
+    bottom: 64px; }
+    .featured-image .entry-header .entry-meta {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em; }
+    .featured-image .entry-header .entry-title {
+      margin: 15px 0 0 0; }
+      .featured-image .entry-header .entry-title a {
+        font-size: 40px;
+        color: #ffffff; }
+
+.site-single .entry-content p {
+  font-size: 16px;
+  color: #1E1C21;
+  line-height: 25px; }
 
 /* ==========================================================================
    #HEADINGS
