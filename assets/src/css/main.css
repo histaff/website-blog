@@ -1672,6 +1672,13 @@ body {
           color: #797283; }
           body footer .widget__item .links ul li a:hover, body footer .widget__item .links ul li a:active {
             color: #8953b7; }
+    body footer .widget__item .links .links__special {
+      background-color: #8953b7;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 2px 5px; }
+      body footer .widget__item .links .links__special:hover {
+        color: #ffffff; }
     body footer .widget__item .social {
       text-align: right; }
       @media screen and (max-width: 719px) {
