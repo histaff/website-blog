@@ -5,6 +5,11 @@
     </div>
 
     <div class="container">
+        <div class="cats">
+            <span>Filter By Category :</span>
+            <ul><?php wp_list_categories('hide_empty=0&title_li='); ?></ul>
+        </div>
+
         <div id="primary" class="content-area">
             <main id="main" class="site-main">
                 <div class="row">

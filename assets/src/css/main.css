@@ -469,9 +469,6 @@ fieldset {
 /**
  * Consistent indentation for lists.
  */
-dd, ol, ul {
-  margin-left: 24px; }
-
 body strong {
   font-weight: bold; }
 
@@ -479,6 +476,28 @@ body ul li {
   line-height: 24px;
   list-style: square;
   color: #1E1C21; }
+
+.cats {
+  text-align: center;
+  margin: 0 0 19px 0; }
+  .cats ul {
+    display: inline-block; }
+    .cats ul li {
+      display: inline-block;
+      padding: 0 10px; }
+      .cats ul li a {
+        color: #1E1C21; }
+        .cats ul li a:hover {
+          color: #8953b7; }
+    .cats ul li.current-cat a {
+      background-color: #8953B7;
+      color: #ffffff;
+      border-radius: 4px;
+      padding: 4px 7px; }
+  .cats span {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #797283; }
 
 .site-main .entry-meta {
   font-size: 12px;
@@ -546,6 +565,9 @@ body ul li {
   font-size: 16px;
   color: #1E1C21;
   line-height: 25px; }
+
+.site-single ul {
+  margin-left: 24px; }
 
 /* ==========================================================================
    #HEADINGS
@@ -1593,7 +1615,8 @@ body {
     margin-bottom: 54px; }
     @media screen and (max-width: 719px) {
       body .page-header {
-        padding-top: 1px; }
+        padding-top: 1px;
+        padding-bottom: 50px; }
         body .page-header h1, body .page-header h2 {
           padding-top: 0; } }
     body .page-header h1 {
