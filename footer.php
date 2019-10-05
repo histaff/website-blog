@@ -16,6 +16,7 @@
 				<div class="widget__item">
 					<ul class="links"><h4>HiStaff</h4>
 						<ul>
+							<li><a href="https://histaff.io/integrations/slack" title="Integration">Integration</a></li>
 							<li><a href="https://histaff.io/about" title="About Us">About</a></li>
 							<li><a href="https://histaff.io/blog/" title="Blog">Blog</a></li>
 							<li><a class="links__special" href="https://feedback.histaff.io/" target="_blank" title="We look forward to receiving your great feedback">Feedback</a></li>
